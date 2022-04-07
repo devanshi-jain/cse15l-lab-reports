@@ -8,7 +8,7 @@
 Follow this page asap : [ucsd_memes_memes](https://www.instagram.com/ucsd_memes_memes/)	
 
 ## Safety first
-![Image](https://external-preview.redd.it/oAIrCCDyZ8LQzX8HHUt8c77QGzXKq2q-xeOs_hfrUhU.jpg?auto=webp&s=97b04bb528a6317ef63d47ab5cef6aee30863af7)
+![Image](oAIrCCDyZ8LQzX8HHUt8c77QGzXKq2q-xeOs_hfrUhU.webp)
 
 `The ship is unsinkable they said.`
 ```
