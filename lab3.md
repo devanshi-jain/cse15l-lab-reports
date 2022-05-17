@@ -9,7 +9,7 @@ Show the ssh command logging you into your account using just the alias you chos
 
 Show an scp command copying a file to your account using just the alias you chose.
 
-![Error 13](13.png)
+![Error 13](err.png)
 
 ## Setup Github Access from ieng6
 Show where the public key you made is stored on Github and in your user account (screenshot).
