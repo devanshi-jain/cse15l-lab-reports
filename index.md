@@ -1,4 +1,11 @@
-# ~ Some of the most iconic words ever said ~
+[Lab Report 1](https://devanshi-jain.github.io/cse15l-lab-reports/1.html)
+
+
+[Lab Report 2](https://devanshi-jain.github.io/cse15l-lab-reports/lab-2.html)
+
+
+[Lab Report 3](https://devanshi-jain.github.io/cse15l-lab-reports/lab3.html)
+<!-- # ~ Some of the most iconic words ever said ~
 
 > __"I'm Something of a Scientist Myself"__ - _Green Goblin_
 
@@ -15,5 +22,7 @@ Follow this page asap : [ucsd_memes_memes](https://www.instagram.com/ucsd_memes_
 .titanic {
   float: none;
 }
-```
+``` -->
+
+
 created by **Devanshi Jain**
