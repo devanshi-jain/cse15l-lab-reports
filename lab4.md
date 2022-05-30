@@ -3,15 +3,12 @@
 
 Proceeded by adding three test methods in each MarkdownParse repository. 
 
-Note: 
-
 1. Repository teamOne is a cloned repository corresponding to the collective github repository of our group : https://github.com/mv5903/markdown-parser
+2. Repository teamTwo is the cloned repository of the group we reviewed : https://github.com/aHewig/markdown-parser
 
 No, the corresponding output after running the JUnit test above, did not match the expected output, in our implementation.
 
 ![Error 1](one.png)
-
-2. Repository teamTwo is the cloned repository of the group we reviewed : https://github.com/aHewig/markdown-parser
 
 No, the corresponding output after running the JUnit test above, did not match the expected output, in the implementation we reviewed .
 
