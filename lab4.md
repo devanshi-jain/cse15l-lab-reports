@@ -12,7 +12,7 @@ No, the corresponding output after running the JUnit test above, did not match t
 
 No, the corresponding output after running the JUnit test above, did not match the expected output, in the implementation we reviewed .
 
-![Error 1](two.png)
+![Error 1](twotwo2.png)
 
 
 ## Snippet 1
@@ -38,7 +38,7 @@ public void getLinksTest() throws IOException{
     assertEquals(result, MarkdownParse.getLinks(content));//(content)
 }
 ```
-
+Both programs for snippet 1 simply check the starting and ending of round parentheses i.e. ( ), however, to create a proper link in markdown, the syntax has to be of the form : square brackets followed by parentheses, where the square brackets hold the text, and the parentheses hold the link. (Reference : https://anvilproject.org/guides/content/creating-links). So, specifying the starting and ending of the square brackets in lines 50-55 should fix the error with Snippet-1.
 
 ## Snippet 2
 ```
@@ -63,6 +63,7 @@ public void getLinksTest_2() throws IOException{
     assertEquals(result, MarkdownParse.getLinks(content));//(content)
 }
 ```
+For snippet 2, both programs produce ```a.com((``` instead of ```a.com(())```. This is because they start the resultant link after the first occurence of ```(``` and ends at the first ```)``` no matter the number of ```(``` show up between them. Therefore to fix this error, we need to implement fixes to consider the end of the link only when all possible pairs of parentheses are completed. 
 
 ## Snippet 3
 ```
@@ -106,5 +107,9 @@ public void getLinksTest_3() throws IOException{
     assertEquals(result, MarkdownParse.getLinks(content));//(content)
 }
 ```
+In the first implementation, since all occurences of ```(``` and ```)``` occur in different lines that the link, the first program does not produce any links. To fix this error, we need to edit the code such that it includes all links which are within a single line with no spaces, no matter the parentheses being in different lines. 
+
+For the second implementation (i.e. the one we reviwed), the first two expected products are equal to the links produced, but for the third link, the program returns all strings between the first occurence of ```(```  and the last occurence of ```)```. To fix that, we need to make sure there are no blank spaces within a link. Now, 
+
 
 
