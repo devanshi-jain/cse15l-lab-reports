@@ -7,7 +7,15 @@ Note:
 
 1. Repository teamOne is a cloned repository corresponding to the collective github repository of our group : https://github.com/mv5903/markdown-parser
 
+No, the corresponding output after running the JUnit test above, did not match the expected output, in our implementation.
+
+![Error 1](one.png)
+
 2. Repository teamTwo is the cloned repository of the group we reviewed : https://github.com/aHewig/markdown-parser
+
+No, the corresponding output after running the JUnit test above, did not match the expected output, in the implementation we reviewed .
+
+![Error 1](two.png)
 
 
 ## Snippet 1
@@ -33,13 +41,7 @@ public void getLinksTest() throws IOException{
     assertEquals(result, MarkdownParse.getLinks(content));//(content)
 }
 ```
-No, the corresponding output after running the JUnit test above, did not match the expected output, in our implementation.
 
-![Error 1](er1.png)
-
-No, the corresponding output after running the JUnit test above, did not match the expected output, in the implementation we reviewed .
-
-![Error 1](err1.png)
 
 ## Snippet 2
 ```
@@ -64,14 +66,6 @@ public void getLinksTest_2() throws IOException{
     assertEquals(result, MarkdownParse.getLinks(content));//(content)
 }
 ```
-
-No, the corresponding output after running the JUnit test above, did not match the expected output, in our implementation.
-
-![Error 2](er2.png)
-
-No, the corresponding output after running the JUnit test above, did not match the expected output, in the implementation we reviewed .
-
-![Error 2](err2.png)
 
 ## Snippet 3
 ```
@@ -115,11 +109,5 @@ public void getLinksTest_3() throws IOException{
     assertEquals(result, MarkdownParse.getLinks(content));//(content)
 }
 ```
-No, the corresponding output after running the JUnit test above, did not match the expected output, in our implementation.
 
-![Error 3](er3.png)
-
-No, the corresponding output after running the JUnit test above, did not match the expected output, in the implementation we reviewed .
-
-![Error 3](err3.png)
 
