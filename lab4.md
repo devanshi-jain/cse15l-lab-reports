@@ -26,15 +26,15 @@ No, the corresponding output after running the JUnit test above, did not match t
 [`code]`](ucsd.edu)
 
 ```
-After viewing the code through VScode preview, the valid links turn up in blue colored font, hence, making it clear, MarkdownParse.java's expected output is ```another link```
-```cod[e``` ```code]```
+After viewing the code through VScode preview, the valid links turn up in blue colored font, hence, making it clear, MarkdownParse.java's expected output is ```google.com```
+```google.com``` ```ucsd.edu```
 ### JUnit test implementation in MarkdownParseTestDevanshi.java for Snippet 1.
 ```
 @Test
 public void getLinksTest() throws IOException{
     Path fileName = Path.of("labTest1.md");
     String content = Files.readString(fileName);
-    List<String> result = List.of("another link", "cod[e", "code]");
+    List<String> result = List.of("google.com", "google.com", "ucsd.edu");
     assertEquals(result, MarkdownParse.getLinks(content));//(content)
 }
 ```
@@ -49,9 +49,9 @@ public void getLinksTest() throws IOException{
 [some escaped \[ brackets \]](example.com)
 
 ```
-After viewing the code through VScode preview, the valid links turn up in blue colored font, hence, making it clear, MarkdownParse.java's expected output is ```nested link```
-```a nested parenthesized url```
-```some escaped [ brackets ]```
+After viewing the code through VScode preview, the valid links turn up in blue colored font, hence, making it clear, MarkdownParse.java's expected output is ```a.com```
+```a.com(())```
+```example.com```
 
 ### JUnit test implementation in MarkdownParseTestDevanshi.java for Snippet 2.
 ```
@@ -59,7 +59,7 @@ After viewing the code through VScode preview, the valid links turn up in blue c
 public void getLinksTest_2() throws IOException{
     Path fileName = Path.of("labTest2.md");
     String content = Files.readString(fileName);
-    List<String> result = List.of("nested link", "a nested parenthesized url", "some escaped [ brackets ]");
+    List<String> result = List.of("a.com", "a.com(())", "example.com");
     assertEquals(result, MarkdownParse.getLinks(content));//(content)
 }
 ```
@@ -93,7 +93,7 @@ And then there's more text
 ```
 
 After viewing the code through VScode preview, the valid links turn up in blue colored font, hence, making it clear, MarkdownParse.java's expected output is ```https://www.twitter.com```
-```this title text is really long and takes up more than one line```
+```https://sites.google.com/eng.ucsd.edu/cse-15l-spring-2022/schedule```
 ```https://cse.ucsd.edu/```
 
 ### JUnit test implementation in MarkdownParseTestDevanshi.java for Snippet 3.
@@ -102,7 +102,7 @@ After viewing the code through VScode preview, the valid links turn up in blue c
 public void getLinksTest_3() throws IOException{
     Path fileName = Path.of("labTest3.md");
     String content = Files.readString(fileName);
-    List<String> result = List.of("https://www.twitter.com", "this title text is really long and takes up more than one line", "https://cse.ucsd.edu/"); 
+    List<String> result = List.of("https://www.twitter.com", "https://sites.google.com/eng.ucsd.edu/cse-15l-spring-2022/schedule", "https://cse.ucsd.edu/"); 
     assertEquals(result, MarkdownParse.getLinks(content));//(content)
 }
 ```
