@@ -33,6 +33,14 @@ public void getLinksTest() throws IOException{
     assertEquals(result, MarkdownParse.getLinks(content));//(content)
 }
 ```
+No, the corresponding output after running the JUnit test above, did not match the expected output, in our implementation.
+
+![Error 1](err1.png)
+
+No, the corresponding output after running the JUnit test above, did not match the expected output, in the implementation we reviewed .
+
+![Error 1](err1.png)
+
 ## Snippet 2
 ```
 [a [nested link](a.com)](b.com)
@@ -42,6 +50,10 @@ public void getLinksTest() throws IOException{
 [some escaped \[ brackets \]](example.com)
 
 ```
+After viewing the code through VScode preview, the valid links turn up in blue colored font, hence, making it clear, MarkdownParse.java's expected output is ```nested link```
+```a nested parenthesized url```
+```some escaped [ brackets ]```
+
 ### JUnit test implementation in MarkdownParseTestDevanshi.java for Snippet 2.
 ```
 @Test
@@ -52,6 +64,15 @@ public void getLinksTest_2() throws IOException{
     assertEquals(result, MarkdownParse.getLinks(content));//(content)
 }
 ```
+
+No, the corresponding output after running the JUnit test above, did not match the expected output, in our implementation.
+
+![Error 2](err2.png)
+
+No, the corresponding output after running the JUnit test above, did not match the expected output, in the implementation we reviewed .
+
+![Error 2](err2.png)
+
 ## Snippet 3
 ```
 [this title text is really long and takes up more than 
@@ -79,6 +100,11 @@ And there's still some more text after that.
 
 And then there's more text
 ```
+
+After viewing the code through VScode preview, the valid links turn up in blue colored font, hence, making it clear, MarkdownParse.java's expected output is ```https://www.twitter.com```
+```this title text is really long and takes up more than one line```
+```https://cse.ucsd.edu/```
+
 ### JUnit test implementation in MarkdownParseTestDevanshi.java for Snippet 3.
 ```
 @Test
@@ -89,4 +115,11 @@ public void getLinksTest_3() throws IOException{
     assertEquals(result, MarkdownParse.getLinks(content));//(content)
 }
 ```
+No, the corresponding output after running the JUnit test above, did not match the expected output, in our implementation.
+
+![Error 3](err3.png)
+
+No, the corresponding output after running the JUnit test above, did not match the expected output, in the implementation we reviewed .
+
+![Error 3](err3.png)
 
