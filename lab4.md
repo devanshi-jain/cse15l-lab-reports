@@ -35,7 +35,7 @@ public void getLinksTest() throws IOException{
 ```
 No, the corresponding output after running the JUnit test above, did not match the expected output, in our implementation.
 
-![Error 1](err1.png)
+![Error 1](er1.png)
 
 No, the corresponding output after running the JUnit test above, did not match the expected output, in the implementation we reviewed .
 
@@ -67,7 +67,7 @@ public void getLinksTest_2() throws IOException{
 
 No, the corresponding output after running the JUnit test above, did not match the expected output, in our implementation.
 
-![Error 2](err2.png)
+![Error 2](er2.png)
 
 No, the corresponding output after running the JUnit test above, did not match the expected output, in the implementation we reviewed .
 
@@ -117,7 +117,7 @@ public void getLinksTest_3() throws IOException{
 ```
 No, the corresponding output after running the JUnit test above, did not match the expected output, in our implementation.
 
-![Error 3](err3.png)
+![Error 3](er3.png)
 
 No, the corresponding output after running the JUnit test above, did not match the expected output, in the implementation we reviewed .
 
