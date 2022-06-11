@@ -9,4 +9,6 @@
 
 [Lab Report 4](https://devanshi-jain.github.io/cse15l-lab-reports/lab4.html)
 
+[Lab Report 5](https://devanshi-jain.github.io/cse15l-lab-reports/lab5.html)
+
 created by **Devanshi Jain**
